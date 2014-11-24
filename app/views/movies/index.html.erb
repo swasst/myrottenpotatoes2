@@ -1,0 +1,34 @@
+<html>
+<body>
+<h1 class="title"> All Movies</h1>
+<table id="movies">
+  <thead>
+  <tr>
+    <td>  Movie Title     </td>
+    <td>  Rating </td>
+    <td>  Release Date </td>
+    <td>  More Info </td>
+  </tr>
+  </thead>
+  <tbody>
+  <% @movies.each do |movie| %>
+      <tr>
+        <th>  <%= movie.title %>   </th>
+        <th>  <%= movie.rating %>  </th>
+        <th>  <%= movie.release_date %> </th>
+        <th>  More about <a href= "movies/<%= movie.id %>"> <%= movie.title %></a>  </th>
+      </tr>
+  <%end%>
+  </tbody>
+</table>
+<p><a href="movies/new"> Add a new Movie </a> </p>
+
+<!-- NEWLY added -->
+<% if flash[:notice] %>
+    <div class="notice"> </div>
+<% end %>
+<!-- NEWLY added -->
+
+
+</body>
+</html>

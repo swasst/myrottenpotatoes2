@@ -1,0 +1,28 @@
+<h2>Details about <%= @movie.title %> </h2>
+<ul id="details">
+  <li> Rating: <%= @movie.rating %> </li>
+  <li> Released on: <%= @movie.release_date.strftime("%B %d, %Y")%></li>
+</ul>
+
+<h3> Description: </h3>
+<p id="description"> <%= @movie.description %>  </p>
+
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
+
+
+
+
+
+<%= link_to 'Edit info', edit_movie_path(@movie) %>
+<% # This Delete link will not really be a link, but a form: %>
+<%= button_to 'Delete', movie_path(@movie), :method => :delete, :confirm => 'Are you sure?' %>
+<a href="<%= movies_path %>">Back to movie list</a>
+
+
+<!-- NEWLY added -->
+<% if flash[:notice] %>
+    <div class="notice"> </div>
+<% end %>
+<!-- NEWLY added -->
