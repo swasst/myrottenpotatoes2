@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails myrottenpotatoes2: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="e5615fcb-12eb-4139-9777-502096f518a3">
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:C:\Users\arzum.karatas\RubymineProjects\myrottenpotatoes2\db\development.sqlite3</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>
